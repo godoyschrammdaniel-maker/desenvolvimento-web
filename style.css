@@ -1,0 +1,328 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cabecalho {
+    background: #0f172a;
+    color: white;
+    padding: 18px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: #60a5fa;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a,
+.atalho-carrinho {
+    color: white;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #60a5fa;
+}
+
+.atalho-carrinho {
+    background: #2563eb;
+    padding: 9px 14px;
+    border-radius: 8px;
+}
+
+.destaque {
+    background: linear-gradient(135deg, #2563eb, #0f172a);
+    color: white;
+    text-align: center;
+    padding: 75px 20px;
+}
+
+.etiqueta {
+    color: #bfdbfe;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.destaque h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    margin: 12px 0;
+}
+
+.botao-link {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 22px;
+    background: white;
+    color: #1d4ed8;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.secao {
+    padding: 45px 5%;
+}
+
+.secao h2,
+.sobre h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    color: #64748b;
+    margin-bottom: 22px;
+}
+
+.filtros {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.filtros input,
+.filtros select {
+    min-width: 0;
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: white;
+    font-size: 15px;
+}
+
+.filtros input {
+    flex: 2;
+}
+
+.filtros select {
+    flex: 1;
+}
+
+#resultado {
+    margin-bottom: 18px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.grade-produtos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px #0f172a10;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.imagem {
+    display: grid;
+    place-items: center;
+    min-height: 130px;
+    background: #dbeafe;
+    border-radius: 9px;
+    font-size: 55px;
+}
+
+.card h3 {
+    color: #1d4ed8;
+}
+
+.categoria-texto {
+    color: #64748b;
+    font-size: 13px;
+}
+
+.preco {
+    color: #15803d;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button {
+    border: none;
+    border-radius: 7px;
+    padding: 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.botao-adicionar {
+    margin-top: auto;
+    background: #2563eb;
+    color: white;
+}
+
+.botao-adicionar:hover {
+    background: #1d4ed8;
+}
+
+.carrinho-secao {
+    background: #e2e8f0;
+}
+
+.itens-carrinho {
+    display: grid;
+    gap: 12px;
+}
+
+.item-carrinho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+    background: white;
+    padding: 16px;
+    border-radius: 9px;
+}
+
+.item-info {
+    flex: 1;
+    min-width: 150px;
+}
+
+.item-info p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.controles-item {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.botao-quantidade {
+    background: #dbeafe;
+    color: #1d4ed8;
+    font-weight: bold;
+    min-width: 35px;
+}
+
+.botao-remover {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.resumo-carrinho {
+    margin-top: 22px;
+    padding: 20px;
+    background: white;
+    border-radius: 9px;
+}
+
+.resumo-carrinho p {
+    margin-bottom: 8px;
+}
+
+#valor-total {
+    color: #15803d;
+    font-size: 22px;
+}
+
+.botao-secundario {
+    margin-top: 12px;
+    background: #334155;
+    color: white;
+}
+
+.mensagem-vazia {
+    padding: 20px;
+    background: white;
+    border-radius: 9px;
+    color: #64748b;
+}
+
+.sobre {
+    background: white;
+    text-align: center;
+    padding: 40px 5%;
+}
+
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+    outline: 3px solid #60a5fa;
+    outline-offset: 3px;
+}
+
+@media (max-width: 900px) {
+    .grade-produtos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .cabecalho {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .filtros {
+        flex-direction: column;
+    }
+
+    .grade-produtos {
+        grid-template-columns: 1fr;
+    }
+
+    .item-carrinho {
+        align-items: flex-start;
+    }
+
+    .controles-item {
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Catálogo de Gadgets</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="products.js" defer></script>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <a class="logo" href="#inicio">TechStore</a>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#carrinho">Carrinho</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+
+        <a class="atalho-carrinho" href="#carrinho">
+            🛒 Carrinho (<span id="contador">0</span>)
+        </a>
+    </header>
+
+    <main id="inicio">
+        <section class="destaque">
+            <p class="etiqueta">TECNOLOGIA E INOVAÇÃO</p>
+            <h1>Descubra o futuro.</h1>
+            <p>Conheça nossos gadgets tecnológicos inteligentes.</p>
+            <a class="botao-link" href="#produtos">Ver produtos</a>
+        </section>
+
+        <section id="produtos" class="secao">
+            <h2>Catálogo de produtos</h2>
+            <p class="subtitulo">
+                Encontre o gadget ideal para você.
+            </p>
+
+            <div class="filtros">
+                <input
+                    type="search"
+                    id="pesquisa"
+                    placeholder="Pesquisar pelo nome..."
+                    aria-label="Pesquisar produtos"
+                >
+
+                <select id="categoria" aria-label="Filtrar categoria">
+                    <option value="todos">Todas as categorias</option>
+                    <option value="Wearables">Wearables</option>
+                    <option value="Casa Inteligente">Casa Inteligente</option>
+                </select>
+            </div>
+
+            <p id="resultado" aria-live="polite"></p>
+
+            <div id="grade-produtos" class="grade-produtos"></div>
+        </section>
+
+        <section id="carrinho" class="secao carrinho-secao">
+            <h2>Meu carrinho</h2>
+            <p class="subtitulo">
+                Confira os produtos selecionados.
+            </p>
+
+            <div id="itens-carrinho" class="itens-carrinho"></div>
+
+            <div class="resumo-carrinho">
+                <p>
+                    Total de itens:
+                    <strong id="total-itens">0</strong>
+                </p>
+                <p>
+                    Valor total:
+                    <strong id="valor-total">R$ 0,00</strong>
+                </p>
+
+                <button id="limpar-carrinho" class="botao-secundario"
+                        type="button">
+                    Limpar carrinho
+                </button>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <h2>Sobre a TechStore</h2>
+            <p>
+                Projeto acadêmico de Desenvolvimento Web,
+                desenvolvido com HTML5, CSS3 e JavaScript.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 TechStore - Projeto acadêmico</p>
+    </footer>
+
+</body>
+</html>
